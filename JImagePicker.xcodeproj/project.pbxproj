@@ -14,6 +14,7 @@
 		1DA9CFB41BA2B7A700C507E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA9CFB31BA2B7A700C507E6 /* Images.xcassets */; };
 		1DA9CFB71BA2B7A700C507E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA9CFB51BA2B7A700C507E6 /* LaunchScreen.xib */; };
 		1DA9CFC31BA2B7A700C507E6 /* JImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9CFC21BA2B7A700C507E6 /* JImagePickerTests.m */; };
+		1DA9CFD21BA2B9B700C507E6 /* JImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9CFD11BA2B9B700C507E6 /* JImagePickerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1DA9CFBC1BA2B7A700C507E6 /* JImagePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JImagePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA9CFC11BA2B7A700C507E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DA9CFC21BA2B7A700C507E6 /* JImagePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JImagePickerTests.m; sourceTree = "<group>"; };
+		1DA9CFD01BA2B9B700C507E6 /* JImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JImagePickerManager.h; path = JImagePicker/JImagePickerManager.h; sourceTree = SOURCE_ROOT; };
+		1DA9CFD11BA2B9B700C507E6 /* JImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JImagePickerManager.m; path = JImagePicker/JImagePickerManager.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		1DA9CFA51BA2B7A700C507E6 /* JImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				1DA9CFCC1BA2B7BA00C507E6 /* ImagePicker */,
 				1DA9CFAA1BA2B7A700C507E6 /* AppDelegate.h */,
 				1DA9CFAB1BA2B7A700C507E6 /* AppDelegate.m */,
 				1DA9CFAD1BA2B7A700C507E6 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				1DA9CFC11BA2B7A700C507E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DA9CFCC1BA2B7BA00C507E6 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				1DA9CFD01BA2B9B700C507E6 /* JImagePickerManager.h */,
+				1DA9CFD11BA2B9B700C507E6 /* JImagePickerManager.m */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				1DA9CFAF1BA2B7A700C507E6 /* ViewController.m in Sources */,
 				1DA9CFAC1BA2B7A700C507E6 /* AppDelegate.m in Sources */,
+				1DA9CFD21BA2B9B700C507E6 /* JImagePickerManager.m in Sources */,
 				1DA9CFA91BA2B7A700C507E6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

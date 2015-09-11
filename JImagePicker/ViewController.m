@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "JImagePickerManager.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+   
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)choose:(id)sender {
+    
+    [JImagePickerManager chooseImageFromViewController:self allowEditting:YES imageMaxSizeLength:320 completionHandle:^ (UIImage *  image,  NSDictionary *  pickingMediainfo, BOOL *  dismiss){
+        //image
+    }];
+    
+   
 }
+
 
 @end
